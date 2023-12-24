@@ -255,7 +255,7 @@ const Home: FC<HomeProps> = () => {
 
       {/* Box below the three boxes with some distance */}
       <div
-        className="mt-8 mb-8 p-8 opacity-50 backdrop-blur-md backdrop-filter w-[1200px] h-[10px] rounded-[15px]"
+        className="mt-8 mb-8 p-8 opacity-90 backdrop-blur-[2px] backdrop-filter w-[1200px] h-[10px] rounded-[15px]"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
       >
         {/* Box inside the box below the three boxes and positioned horizontally at the left */}
@@ -278,7 +278,7 @@ const Home: FC<HomeProps> = () => {
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div
-            className="w-[500px] h-[40px] p-4 opacity-80 backdrop-blur-[2px] backdrop-filter rounded-[15px] flex items-center"
+            className="w-[500px] h-[40px] p-4 opacity-70 backdrop-blur-[50px] backdrop-filter rounded-[15px] flex items-center"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
           >
             {/* Content inside the centered box */}
@@ -290,7 +290,45 @@ const Home: FC<HomeProps> = () => {
                 alt="search"
                 className="mr-2"
               />
-              <span className="text-white text-sm">See yoe </span>
+              <span className="text-white text-sm">See yoe &nbsp;</span>
+              <Image
+                src="rewind1.svg"
+                height={32}
+                width={32}
+                alt="search"
+                
+              />
+              <Image
+                src="pause.svg"
+                height={32}
+                width={32}
+                alt="search"
+                
+              />
+              <Image
+                src="rewind2.svg"
+                height={32}
+                width={32}
+                alt="search"
+                
+              />
+              <Image
+                src="location.svg"
+                height={32}
+                width={32}
+                alt="search"
+                style={{ margin: '0 8px 0 8px' }}
+                
+              />
+              <span className="text-white text-sm">Greater Noida </span>
+              <Image
+                src="wifi.svg"
+                height={32}
+                width={32}
+                alt="search"
+                style={{ margin: '0 8px 0 8px' }}
+              />
+               <span className="text-white text-sm">12mbps </span>
             </div>
           </div>
         </div>
