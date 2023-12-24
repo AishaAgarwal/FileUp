@@ -50,7 +50,7 @@ const Home: FC<HomeProps> = () => {
         <div className="relative">
           {/* Box at the top of the middle box with margin at the top */}
           <div
-            className="absolute top-0 inset-x-0 mx-auto p-4 mt-4 opacity-80 backdrop-blur-md backdrop-filter w-[900px] h - [200px] rounded-[10px]"
+            className="absolute top-0 inset-x-0 mx-auto p-4 mt-4 opacity-80 backdrop-blur-[2px] backdrop-filter w-[900px] h - [200px] rounded-[10px]"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
           >
             {/* Content inside the box at the top */}
@@ -63,16 +63,16 @@ const Home: FC<HomeProps> = () => {
           </div>
          
           <div
-            className="p-8 opacity-40 backdrop-blur-md backdrop-filter w-[1000px] h-[600px] relative rounded-r-[30px] text-white"
+            className="p-8 opacity-40 backdrop-blur-[90px] backdrop-filter w-[1000px] h-[600px] relative rounded-r-[30px] text-white"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
           >
             {/* Your content inside the box */}
             <div className="mt-20 left 20 text-white text-2xl font-bold mb-2">&#62; &nbsp;My Files</div>
             {/* Four boxes placed horizontally in the middle with top margin */}
-            <div className="flex justify-between mt-">
+            <div className="flex justify-between text-white">
               {/* Box 1 */}
               <div
-                className="w-[200px] h-[100px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-[15px] mt-0"
+                className="w-[200px] h-[100px] p-4 opacity-120 backdrop-blur-[50px] backdrop-filter rounded-[15px] mt-0 text-white"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
               >
                 {/* Content inside Box 1 */}
@@ -90,7 +90,7 @@ const Home: FC<HomeProps> = () => {
 
               {/* Box 2 */}
               <div
-                className="w-[200px] h-[100px] p-4 opacity-80 backdrop-blur-md backdrop-filter rounded-[15px] mt-0"
+                className="w-[200px] h-[100px] p-4 opacity-100 backdrop-blur-[50px] backdrop-filter rounded-[15px] mt-0"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
               >
                 {/* Content inside Box 2 */}
@@ -108,7 +108,7 @@ const Home: FC<HomeProps> = () => {
 
               {/* Box 3 */}
               <div
-                className="w-[200px] p-4 opacity-80 backdrop-blur-md backdrop-filter rounded-[15px] mt-0"
+                className="w-[200px] h-[100px] p-4 opacity-100 backdrop-blur-[50px] backdrop-filter rounded-[15px] mt-0"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
               >
                 {/* Content inside Box 3 */}
@@ -126,7 +126,7 @@ const Home: FC<HomeProps> = () => {
 
               {/* Box 4 */}
               <div
-                className="w-[200px] p-4 opacity-90 backdrop-blur-md backdrop-filter rounded-[15px] mt-0"
+                className="w-[200px] h-[100px] p-4 opacity-100 backdrop-blur-[50px] backdrop-filter rounded-[15px] mt-0"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
               >
                 {/* Content inside Box 4 */}
@@ -146,7 +146,7 @@ const Home: FC<HomeProps> = () => {
 
           {/* Box at the bottom of the middle box */}
           <div
-            className="absolute bottom-0 inset-x-0 mx-auto p-4 opacity-90 backdrop-blur-md backdrop-filter w-[950px] h-[350px] rounded-[15px] mt-20"
+            className="absolute bottom-0 inset-x-0 mx-auto p-4 opacity-90 backdrop-blur-md backdrop-filter w-[950px] h-[330px] rounded-[15px] mt-20"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
           >
             {/* Content inside the box at the bottom */}
@@ -222,35 +222,50 @@ const Home: FC<HomeProps> = () => {
       >
         {/* Box inside the box below the three boxes and positioned horizontally at the left */}
         <div
-          className=" absolute left-0 top-0 w-[150px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-[15px] mt-3"
+          className=" absolute left-0 top-0 w-[150px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-[15px] mt-3 flex items-center text-white"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }}
         >
           {/* Content inside the box inside the box below the three boxes */}
+          <Image src="avatar2.svg" height={32} width={32} alt="search" className="mr-auto" />
+          <span className="text-white text-sm">Hello &nbsp;</span>
+            <br />
+            <span className="text-white text-sm">Aisha</span>
+
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div
-            className="w-[500px] h-[40px] p-4 opacity-80 backdrop-blur-md backdrop-filter rounded-[15px]"
+            className="w-[500px] h-[40px] p-4 opacity-80 backdrop-blur-[2px] backdrop-filter rounded-[15px] flex items-center"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
           >
             {/* Content inside the centered box */}
+            <div className="flex items-center">
+  <Image src="spotify.svg" height={32} width={32} alt="search" className="mr-2" />
+  <span className="text-white text-sm">See yoe </span>
+</div>
           </div>
         </div>
         <div className="absolute right-0 top-0 flex">
           {/* Box 1 on the right */}
           <div
-            className="w-[100px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-[15px] mt-3 ml-4"
+            className="w-[100px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-[15px] mt-3 ml-4 flex items-center"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }}
           >
             {/* Content inside Box 1 on the right */}
+            <Image src="work.svg" height={32} width={32} alt="search" className="mr-auto" />
+          <span className="text-white text-sm">Work</span>
+           
           </div>
 
           {/* Box 2 on the right */}
           <div
-            className="w-[45px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-full mt-3 ml-4"
+            className="w-[45px] h-[40px] p-4 opacity-70 backdrop-blur-md backdrop-filter rounded-full mt-3 ml-4 flex items-center"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }}
           >
             {/* Content inside Box 2 on the right */}
+            <Image src="avatar.svg" height={60} width={60} alt="search" />
+            
+
           </div>
         </div>
 
