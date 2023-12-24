@@ -21,7 +21,7 @@ const Home: FC<HomeProps> = () => {
       <div className="flex z-10 mt-10">
         {/* Left Panel */}
         <div
-          className="p-8 opacity-70 backdrop-blur-md backdrop-filter w-[200px] h-[600px] rounded-l-[30px]"
+          className="p-8 opacity-100 backdrop-blur-md backdrop-filter w-[200px] h-[600px] rounded-l-[30px]"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
         >
           {/* Left panel content */}
@@ -50,7 +50,7 @@ const Home: FC<HomeProps> = () => {
         <div className="relative">
           {/* Box at the top of the middle box with margin at the top */}
           <div
-            className="absolute top-0 inset-x-0 mx-auto p-4 mt-4 opacity-80 backdrop-blur-[2px] backdrop-filter w-[900px] h - [200px] rounded-[10px]"
+            className="absolute top-0 inset-x-0 mx-auto p-4 mt-4 opacity-100 backdrop-blur-[20px] backdrop-filter w-[900px] h - [200px] rounded-[10px]"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
           >
             {/* Content inside the box at the top */}
@@ -61,7 +61,7 @@ const Home: FC<HomeProps> = () => {
           </div>
 
           <div
-            className="p-8 opacity-40 backdrop-blur-[90px] backdrop-filter w-[1000px] h-[600px] relative rounded-r-[30px] text-white"
+            className="p-8 opacity-80 backdrop-blur-[2px] backdrop-filter w-[1000px] h-[600px] relative rounded-r-[30px] text-white"
             style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
           >
             {/* Your content inside the box */}
